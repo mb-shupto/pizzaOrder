@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Shop Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        :root {
+            --primary-color: #e63946; /* Pizza red */
+            --secondary-color: #f1faee; /* Light cream */
+            --accent-color: #457b9d; /* Deep blue */
+            --dark-color: #1d3557; /* Navy blue */
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .panel-primary {
+            border-color: var(--primary-color);
+            margin-top: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .panel-heading {
+            background-color: var(--primary-color) !important;
+            color: white;
+            padding: 20px;
+            border-bottom: none;
+        }
+        
+        .panel-heading h1 {
+            font-weight: 700;
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .panel-body {
+            padding: 30px;
+            background-color: white;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 8px;
+        }
+        
+        .form-control {
+            border: 2px solid #ced4da;
+            border-radius: 5px;
+            padding: 12px;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 0.25rem rgba(69, 123, 157, 0.25);
+        }
+        
+        .radio-inline {
+            margin-right: 20px;
+            color: var(--dark-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 12px 24px;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c1121f;
+            transform: translateY(-2px);
+        }
+        
+        .panel-footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Custom radio buttons */
+        input[type="radio"] {
+            margin-right: 8px;
+            accent-color: var(--primary-color);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .panel-body {
+                padding: 20px;
+            }
+            
+            .panel-heading h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <h1>Join Our Pizza Family!</h1>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Sherlock">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Holmes">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Create a password">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Delivery Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="123 Pizza Street">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="01234-567890">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div>
+                                    <label for="male" class="radio-inline"><input type="radio" name="gender" id="male"> Male</label>
+                                    <label for="female" class="radio-inline"><input type="radio" name="gender" id="female"> Female</label>
+                                    <label for="others" class="radio-inline"><input type="radio" name="gender" id="others"> Others</label>
+                                </div> 
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Register Now</button>
+                            
+                            <div class="text-center mt-3">
+                                <small>Already have an account? <a href="#" style="color: var(--accent-color);">Login here</a></small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        &copy; 2025-2026 MegaBytes Pizza | All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
