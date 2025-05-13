@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn->close();
 } else {
     // Not a POST request
-    header("Location: pizza_registration.html");
+    header("Location: index.html");
     exit();
 }
 ?>
